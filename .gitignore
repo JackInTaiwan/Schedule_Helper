@@ -2,5 +2,6 @@ models_nn/
 data/
 .idea/
 nltk_tools/
+__pycache__/
 test*
 all.json
