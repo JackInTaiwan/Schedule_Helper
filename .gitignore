@@ -1,0 +1,6 @@
+models_nn/
+data/
+.idea/
+nltk_tools/
+test*
+all.json
