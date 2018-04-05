@@ -6,6 +6,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Schedule Helper is one simple system which would recommend you suitable future schedule
 based on the previous record .
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
@@ -13,15 +14,16 @@ based on the previous record .
 ## How to Use ?
 * **Step 1 : Train the model**
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Run `python3 schedule_helper.py -d`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This command would train the model. 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `-d` means downloding the NLTK tools. The action of downloading is required for only
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This command would train the model. After running this command, it would produce many .npy files in `./data`
+ which are parameters for models. So don't change the .npy files if there is no need to.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `-d` means downloading the NLTK tools. The action of downloading is required for only
 one time, so you can remove `-d` afterwards.
 
-* **Step 2 : Let model recommend you the scheduel**
+* **Step 2 : Let model recommend you the schedule**
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Run `python3 schedule_prediction.py`
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After done with training the model, you're allowed to access the recommendation from the
  trained model.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After run the command, it would show some interactive printing, please follow it, and you will 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After run the command, it would show some interactive printing, please follow it, and you will 
 retrieve the recommended schedule.
 
 
@@ -32,7 +34,7 @@ retrieve the recommended schedule.
 <br>&nbsp; Python3.5
 * **Data**
 <br>&nbsp;&nbsp;&nbsp;&nbsp; The system need historical(previous) record. For the sake of convenience, we provide
- the previous record data already in "./data/data_schedule.xlsx" . 
+ the previous record data already in `./data/data_schedule.xlsx` . 
 <br>&nbsp;&nbsp;&nbsp;&nbsp; If you're interested, feel free 
  to check it out and know the format.
  
